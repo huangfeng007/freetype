@@ -1,0 +1,47 @@
+.TH TTDEBUG 1 "December 2014" "FreeType 2.5.5"
+.
+.
+.SH NAME
+.
+ttdebug \- a TrueType bytecode debugger
+.
+.
+.SH SYNOPSIS
+.
+.B ttdebug
+.RI [ options ]
+.I index size font
+.
+.
+.SH DESCRIPTION
+.
+.B ttdebug
+is an interactive TrueType bytecode debugger working in a terminal.
+Its spartanic interface faintly resembles debuggers like
+.BR gdb .
+.
+.PP
+For the specified
+.IR font ,
+a glyph with the given
+.I index
+and
+.I size
+is loaded, making it possible to trace the bytecode execution step by step.
+.
+.PP
+This program is part of the FreeType demos package.
+.
+.
+.SH OPTIONS
+.
+.TP
+.BI \-H
+Using hinting engine version 35 (default is version 38).
+It essentially means to deactivate subpixel hinting similar to ClearType.
+.
+.TP
+.B \-v
+Show version.
+.
+.\" eof
